@@ -11,57 +11,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <style>
-      .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-      }
+    <link rel="stylesheet" href="style.css">
 
-      .fa:hover {
-        opacity: 0.7;
-      }
-
-      .fa-facebook {
-        background: #3b5998;
-        color: white;
-      }
-
-      .fa-twitter {
-        background: #55acee;
-        color: white;
-      }
-      .fa-instagram {
-        background: #125688;
-        color: white;
-      }
-    </style>
   </head>
   <body>
     <header>
-      <section>
+      <div>
         <img src="download.png" alt="logo" width="100px" height="100px" />
         <h1>Manchester United F.C</h1>
+      </div>
+        
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Player</a></li>
-            <li><a href="#">Stadium</a></li>
-            <li><a href="#">About</a></li>
+            <li class="1"><a href="#">Home</a></li>
+            <li class="1"><a href="#player">Player</a></li>
+            <li class="1"><a href="#stad">Stadium</a></li>
+            <li class="1"><a href="#about">About</a></li>
+            <li class="1"><a href="#c">Contact Us</a></li>
           </ul>
         </nav>
-      </section>
+     
     </header>
     <main>
       <h2>Player</h2>
       <div id="photo">
+
+        <div>
+
+        </div>
         <ul>
-          <li><img src="1.jpg" alt="cavani" title="cavani" /></li>
-          <li><img src="2.jpg" alt="pogba" title="pogba" /></li>
-          <li><img src="3.jpg" alt="Bruno" title="Bruno" /></li>
+            <li><h2>cavani</h2><img class="00" src="1.jpg" alt="cavani" title="cavani"/></li>
+            <li><h2>pogba</h2><img class="00" src="2.jpg" alt="pogba" title="pogba"/></li>
+            <li><h2>Bruno</h2><img class="00" src="3.jpg" alt="Bruno" title="Bruno" /></li>
         </ul>
       </div>
       <div id="stad">
@@ -71,8 +52,8 @@
           <li><img src="5.jpg" alt="old trafford" /></li>
         </ul>
       </div>
-      <div>
-        <h2>Manchester United Football Club</h2>
+      <div class="aa">
+        <h2 id="about">Manchester United Football Club</h2>
         <p>
           is a professional football club based in Old Trafford, Greater
           Manchester, England, that competes in the Premier League, the top
@@ -83,8 +64,9 @@
         </p>
       </div>
     </main>
-    <footer>
-      <a
+    <footer id="c">
+      <div>
+        <a
         href="https://www.facebook.com/manchesterunited"
         class="fa fa-facebook"
       ></a>
@@ -93,6 +75,8 @@
         href="http://instagram.com/manchesterunited"
         class="fa fa-instagram"
       ></a>
+      </div>
+       
     </footer>
   </body>
 </html>
