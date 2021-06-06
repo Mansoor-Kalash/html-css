@@ -6,11 +6,14 @@ var score = " Choose one of them /n 1. Pogba.    /n 2. Bruno.    /n 3. Cavani";
 // var s = " Enter your name ";
 // var h = "Enter your answer by name";
 var name;
-
 // alert(w);
 
 alert(score);
 name = prompt(score);
+
+function favPlayer()
+{
+
 while (name !== "Pogba" && name !== "Cavani" && name !== "Bruno"  )
 {
 
@@ -18,7 +21,9 @@ while (name !== "Pogba" && name !== "Cavani" && name !== "Bruno"  )
 
 }
 
+}
 
+favPlayer();
 
 
 // var ans= prompt(h);
@@ -43,8 +48,12 @@ while (name !== "Pogba" && name !== "Cavani" && name !== "Bruno"  )
 //   alert(f);
 // }
 
-var numStars;
-numStars = prompt("Rate the Web Site from 1 to 5");
+
+var numStars = prompt("Rate the Web Site from 1 to 5");
+
+var nStars= function (){
+  
+  var outPut= '';
 
 while (numStars !== "1" && numStars !== "2" && numStars !== "3" && numStars !== "4" && numStars !== "5"  )
 {
@@ -55,17 +64,21 @@ while (numStars !== "1" && numStars !== "2" && numStars !== "3" && numStars !== 
 
 for (i=1; i <= numStars; i++)
 {
-  document.write("<img src='https://lh3.googleusercontent.com/proxy/sNL8YMoIu0VAepdqsvTr4no30ZoKqNcAzCh_9irNyPA_IW4VlI0CDMrgYooEJ6gh_88tBFuzM0uDLAcggJccb3zsEgrfvPw' height='200' width='200'>");
-  
+  outPut+=("<img  src='https://lh3.googleusercontent.com/proxy/sNL8YMoIu0VAepdqsvTr4no30ZoKqNcAzCh_9irNyPA_IW4VlI0CDMrgYooEJ6gh_88tBFuzM0uDLAcggJccb3zsEgrfvPw'height='200' width='200' >");
 }
 
 
 for (i= numStars; i<5 ; i++)
 {
-  document.write("<img  width: 200px; height: 200px;src='https://png.pngtree.com/png-clipart/20201106/ourmid/pngtree-commonly-used-free-stars-clipart-png-image_2395198.jpg' height='200' width='200'>");
+  outPut+=("<img  src='https://png.pngtree.com/png-clipart/20201106/ourmid/pngtree-commonly-used-free-stars-clipart-png-image_2395198.jpg' height=height='200' width='200'>");
   
 }
 
+return outPut;
+}
+var rating = nStars();
+
+document.write(rating);
 
 // alert("Youer name in the bottom of the page");
 // document.write("<p style='hight: 50px ; background: #3b5998;color: white; '> " + name + "</p>" );
