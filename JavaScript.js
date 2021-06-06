@@ -1,6 +1,6 @@
 // var w = " Welcom to the club ";
 
-var score = " Choose one of them /n 1. Pogpa.    /n 2. Bruno.    /n 3. Cavani";
+var score = " Choose one of them /n 1. Pogba.    /n 2. Bruno.    /n 3. Cavani";
 // var r = "Correct answer";
 // var f = " Wrong answer";
 // var s = " Enter your name ";
@@ -11,7 +11,7 @@ var name;
 
 alert(score);
 name = prompt(score);
-while (name !== "pogba" && name !== "cavani" && name !== "bruno"  )
+while (name !== "Pogba" && name !== "Cavani" && name !== "Bruno"  )
 {
 
   ans= prompt(score);
