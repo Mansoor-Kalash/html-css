@@ -17,7 +17,7 @@ function favPlayer()
 while (name !== "Pogba" && name !== "Cavani" && name !== "Bruno"  )
 {
 
-  ans= prompt(score);
+  var ans= prompt(score);
 
 }
 
