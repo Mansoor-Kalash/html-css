@@ -10,7 +10,7 @@ var name;
 
 alert(score);
 name = prompt(score);
-
+favPlayer();
 function favPlayer()
 {
 
@@ -23,7 +23,7 @@ while (name !== "Pogba" && name !== "Cavani" && name !== "Bruno"  )
 
 }
 
-favPlayer();
+
 
 
 // var ans= prompt(h);
